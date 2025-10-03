@@ -1,0 +1,25 @@
+table {
+  border-collapse: collapse; /* Une los bordes de las celdas */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+th, td {
+  border: 1px solid #ccc; /* Borde gris claro */
+  padding: 8px; /* Espaciado interno */
+  text-align: center; /* Centra el contenido */
+}
+
+th {
+  background-color: #f2f2f2; /* Fondo gris claro en cabecera */
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #fafafa; /* Color alterno en filas pares */
+}
+
+tr:hover {
+  background-color: #e6f7ff; /* Resalta al pasar el ratón */
+}

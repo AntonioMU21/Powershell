@@ -1,9 +1,9 @@
 $p=get-localUser
 $l=$p.length
-$cadena="<html><body><center><table>"
-$RutaDelFichero="C:\xampp\htdocs\power\usuarios.html"
 
-
+$RutaDelFichero="C:\xampp\htdocs\power\usuariosEstilo.html"
+$readbuffer=Get-Content -path "estilos.css"
+$cadena="<html><head><style>"+$readbuffer+"</style></head><body><center><table>"
 for ($i=0; $i -lt $l; $i++){
 	$cadena=$cadena +"<tr><td>"+$p[$i].name+"</td><td>"+$p[$i].description+"</td></tr>"
 }
